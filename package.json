@@ -1,0 +1,19 @@
+{
+  "name": "restful-booker-playwright-api-framework",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Playwright-only API automation framework for Restful Booker with reusable client, domain APIs, fixtures, and CI-ready setup.",
+  "scripts": {
+    "test": "playwright test",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:regression": "playwright test --grep @regression",
+    "test:auth": "playwright test --grep @auth",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.50.0",
+    "@types/node": "^22.0.0",
+    "dotenv": "^16.4.5",
+    "typescript": "^5.5.4"
+  }
+}
