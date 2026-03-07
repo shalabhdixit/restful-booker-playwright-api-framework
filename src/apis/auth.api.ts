@@ -7,6 +7,7 @@ export class AuthApi {
 
   createToken(username: string, password: string) {
     return this.client.post<AuthTokenResponse>('/auth', {
+      //Test comment
       headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
       data: { username, password },
     });
